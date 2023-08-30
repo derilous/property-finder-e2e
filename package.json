@@ -1,0 +1,19 @@
+{
+  "name": "property-finder-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derilous/property-finder-e2e.git"
+  },
+  "author": "Mohsin Habiya",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/derilous/property-finder-e2e/issues"
+  },
+  "homepage": "https://github.com/derilous/property-finder-e2e#readme"
+}
