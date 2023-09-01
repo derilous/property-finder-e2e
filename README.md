@@ -37,7 +37,7 @@ Test Scenarios
    - Search for properties located in 'Bahrain Bay'.
    - Select the first search result and assert the Available from date to not be empty.
 
-4. This repo also includes a brief performance test on the homepage using lighthouse. It will run with the other tests, and reports are accessible as HTML files in **/cypress/performance-reports**. The scope is better outlined in **/non-code-files/Test Execution Summary.pdf** as well.
+4. This repo also includes a brief performance test on the homepage using lighthouse. It will run with the other tests, and reports are accessible as HTML files in **performance-reports/**. The scope is better outlined in **non-code-files/Test Execution Summary.pdf** as well.
 
 Tools and Technologies:
 
@@ -71,6 +71,6 @@ Configure Cypress upon first start and select `run all tests` in the e2e window.
 
 > Additional Information:
 >
-> There are 2 additional files added to this repo outlining a test summary as well as a test execution report. Both these files go into further detail about the test scenarios and their pass / fail status. Do check it out in `cypress/non-code-files/`.
+> There are 2 additional files added to this repo outlining a test summary as well as a test execution report. Both these files go into further detail about the test scenarios and their pass / fail status. Do check it out in `non-code-files/`.
 
 By participating in this project, you agree to abide by the general open source Code of conduct, fostering an inclusive and respectful community.
