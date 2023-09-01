@@ -1,4 +1,4 @@
-Feature: Scenario 1
+Feature: Search, filter parameters and results
 
   Scenario: Check the total displayed number of results for category Villas with price range more than or equal to 300,000 AED / yearly
     Given Visit the property finder website

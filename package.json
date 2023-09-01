@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "run-chrome": "cypress run --browser chrome"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/derilous/property-finder-e2e#readme",
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cypress-audit/lighthouse": "^1.4.2",
     "cypress": "^13.0.0",
     "esbuild": "^0.19.2"
   },

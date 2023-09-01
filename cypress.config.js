@@ -10,6 +10,8 @@ const createBundler = require('@bahmutov/cypress-esbuild-preprocessor');
 const nodePolyfills =
   require('@esbuild-plugins/node-modules-polyfill').NodeModulesPolyfillPlugin;
 
+const { lighthouse, prepareAudit } = require('@cypress-audit/lighthouse');
+
 const addCucumberPreprocessorPlugin =
   require('@badeball/cypress-cucumber-preprocessor').addCucumberPreprocessorPlugin;
 
@@ -47,6 +49,15 @@ module.exports = defineConfig({
 
         await afterRunHook();
       });
+
+      on('before:browser:launch', (browser = {}, launchOptions) => {
+        prepareAudit(launchOptions);
+      });
+
+      on('task', {
+        lighthouse: lighthouse(),
+      });
+
       return config;
     },
     experimentalRunAllSpecs: true,
