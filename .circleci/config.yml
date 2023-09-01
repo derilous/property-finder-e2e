@@ -1,21 +1,21 @@
 version: 2.1
+
 jobs:
   build:
-    docker:
-      - image: cypress/browsers:node14.17.6-chrome95-ff93 # Use a Docker image with Node.js and Cypress preinstalled
-    steps:
-      - checkout # Check out your project's code
+    working_directory: ~/project
+    executor: cypress/node:14
 
-      # Install dependencies and run Cypress with Cucumber
+    steps:
+      - checkout
       - run:
-          name: Install Dependencies and Run Tests
-          command: |
-            npm install
-            npm run cypress:run
-            npm i @bahmutov/cypress-esbuild-preprocessor
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: Run Tests
+          command: npm run cypress:run
 
 workflows:
-  version: 1
+  version: 2
   build:
     jobs:
       - build
