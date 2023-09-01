@@ -65,7 +65,8 @@ Execute the tests in CLI using the command: `yarn run-chrome`.
 
 #### Cypress UI
 
-Run the command: `yarn open` to open Cypress in the browser window
+Run the command: `yarn open` to open Cypress in the browser window.
+
 Configure Cypress upon first start and select `run all tests` in the e2e window.
 
 > Additional Information:
