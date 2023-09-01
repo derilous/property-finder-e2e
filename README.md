@@ -37,11 +37,7 @@ Test Scenarios
    - Search for properties located in 'Bahrain Bay'.
    - Select the first search result and assert the Available from date to not be empty.
 
-4. This repo also includes a brief performance test on the homepage using lighthouse.
-
-Account Deletion: Verify that users can initiate the account deletion process.
-
-Confirmation and Cancellation: Test the confirmation and cancellation steps during account deletion.
+4. This repo also includes a brief performance test on the homepage using lighthouse. It will run with the other tests, and reports are accessible as HTML files in **/cypress/performance-reports**. The scope is better outlined in **/non-code-files/Test Execution Summary.pdf** as well.
 
 Tools and Technologies:
 
@@ -61,32 +57,19 @@ Install the required dependencies using `yarn`
 
 There are 2 ways to run this test
 
-### CLI:
+#### CLI:
 
 Execute the tests in CLI using the command: `yarn run-chrome`.
 
 > Note: In order to get generated test reports, the tests must be run in CLI. Once the tests have completed running, the test report can be found in `/cypress/reports/index.html`.
 
-### Cypress UI
+#### Cypress UI
 
 Run the command: `yarn open` to open Cypress in the browser window
 Configure Cypress upon first start and select `run all tests` in the e2e window.
 
-### Contributions:
-
-Contributions are welcomed to enhance the test coverage and improve the project. If you would like to contribute, please follow these steps:
-
-Fork the repository.
-
-Create a new branch for your feature or bug fix: git checkout -b feature/your-feature-name
-
-Make your modifications and commit changes: git commit -am 'Add your commit message'
-
-Push the branch to your forked repository.
-
-Open a pull request, describing the changes you've made.
-
-Contact
-If you have any questions or suggestions regarding the project, please feel free to contact Mohsin Habiya at [mohsin.salim567@gmail.com].
+> Additional Information:
+>
+> There are 2 additional files added to this repo outlining a test summary as well as a test execution report. Both these files go into further detail about the test scenarios and their pass / fail status. Do check it out in `cypress/non-code-files/`.
 
 By participating in this project, you agree to abide by the general open source Code of conduct, fostering an inclusive and respectful community.
