@@ -2,6 +2,7 @@ const { defineConfig } = require('cypress');
 const {
   beforeRunHook,
   afterRunHook,
+} = require('cypress-mochawesome-reporter/lib');
 const createEsbuildPlugin =
   require('@badeball/cypress-cucumber-preprocessor/esbuild').createEsbuildPlugin;
 
