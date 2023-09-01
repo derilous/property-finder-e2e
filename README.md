@@ -1,4 +1,4 @@
-# Project README
+# property-finder-e2e README
 
 This project is aimed at testing various functions and features of the propertyfinder.bh website. It includes end-to-end tests that focus on the following key areas:
 
